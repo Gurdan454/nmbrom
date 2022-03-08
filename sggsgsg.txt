@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Welcome</title>
+</head>
+<body>
+  <script>
+  const burn = "kancil";
+  const template=`nama: ${burn}`;
+  console.info(template);  
+  
+  let dors ="90";
+  let nilaib ="40";
+  
+  let lulus = dors >"70";
+  let nujian = nilaib >"50";
+  
+  let kelas = "kancil lulus ujian = "+lulus // nujian;
+  console.info(kelas);
+  
+  let multilineString =
+  `kancil adalah hewan,
+  yang cerdas, dan suka membantu`;
+  
+  console.info("ciri ciri kancil:");
+  console.info(multilineString); 
+  
+ console.info("kancil mencuri timun 1000 dan buah 1000 berapa hasil curian kancil 1000+1000 = "); 
+ const a= parseFloat("1000");
+ const b=1000;
+ const dg = a + b;
+ console.info(dg);
+    
+let dbg = 0b11111010000;
+ console.info(dbg + " benar √");
+ 
+ const name=[" absen hewan dan manusia = kancil"];
+ name.push("pemburu");
+ name.push("kerbau");
+ const bor= ("jumlah : " + name.length);
+ console.info(bor);
+ name[2]= "harimau kerbau kura-kura";
+ delete name[2];
+ name.push("ular");
+ name[2]="kosong";
+ console.table(name);
+ 
+ const per = {
+ 	 "nama lengkap" : "guardian",
+ 	 umur: 58
+ }
+  console.table(per["nama lengkap"]);
+  console.table(per["umur"]);
+  console.table(per + " <---- error");  
+  </script>
+</body>
+</html>
